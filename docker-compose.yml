@@ -1,0 +1,14 @@
+---
+version: '3.8'
+
+services:
+  smokeping_slave:
+    image: smokeping_slave
+    container_name: smokeping_slave
+    hostname: pinger
+    restart: unless-stopped
+    environment:
+      - MASTER_URL="https://some.smokeping.host.net/smokeping/smokeping.cgi"
+      - MASTER_SECRET=My-secret-password-sssssh
+
+

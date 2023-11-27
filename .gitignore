@@ -1,0 +1,4 @@
+# Git Ignore
+
+# Ignore any jetbrains stuff
+.idea/
